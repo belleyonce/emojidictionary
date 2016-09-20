@@ -80,6 +80,10 @@
                             <constraint firstItem="UBo-ih-Mhc" firstAttribute="top" secondItem="Qgp-l8-mhp" secondAttribute="bottom" constant="50" id="w7M-zb-GLZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="definitionLabel" destination="UBo-ih-Mhc" id="YzK-0V-xef"/>
+                        <outlet property="emojiLabel" destination="Qgp-l8-mhp" id="du4-R8-ZPW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Cc-Hh-AAX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
