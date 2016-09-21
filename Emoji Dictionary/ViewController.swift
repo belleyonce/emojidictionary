@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-
+    
     @IBOutlet weak var belletableview: UITableView!
     
     var emojis = ["😂","😃","😱","😒","😏","🧀","💉","🍑","🍆","💦","🐝","🔥"]
@@ -18,7 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         super.viewDidLoad()
         
         // Do any additional setup after loading the view, typically from a nib.
-    
+        
         
         
         belletableview.dataSource = self
@@ -36,25 +36,26 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         return cell
         
     }
-
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-         let emoji = emojis[indexPath.row]
+        let emoji = emojis[indexPath.row]
         performSegue(withIdentifier: "moveSegue", sender: emoji)
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: AnyObject?) {
+    override func prepare(for segue: UIStoryboardSegue, sender:
+        AnyObject?) {
         let defVC = segue.destination as!
         DefinitionViewController
         defVC.emoji = sender as! String
-
+        
     }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    
 }
 

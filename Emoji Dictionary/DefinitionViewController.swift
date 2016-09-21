@@ -39,7 +39,7 @@ class DefinitionViewController: UIViewController {
             definitionLabel.text = "Happy AF face"
         }
         if emoji == "🧀" {
-            definitionLabel.text = "No cheeky cheese for belle because diarrhea"
+            definitionLabel.text = "No cheeky cheese for belle bc lactose intolerant"
         }
         if emoji == "💉" {
             definitionLabel.text = "Classic Heroin"
