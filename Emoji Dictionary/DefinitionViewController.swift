@@ -39,9 +39,26 @@ class DefinitionViewController: UIViewController {
             definitionLabel.text = "Happy AF face"
         }
         if emoji == "🧀" {
-            definitionLabel.text = "No cheeky cheese for Belle because diarrhea"
+            definitionLabel.text = "No cheeky cheese for belle because diarrhea"
         }
-       
+        if emoji == "💉" {
+            definitionLabel.text = "Classic Heroin"
+        }
+        if emoji == "🍑" {
+            definitionLabel.text = "Bootay"
+        }
+        if emoji == "🍆" {
+            definitionLabel.text = "Purp Peen"
+        }
+        if emoji == "💦" {
+            definitionLabel.text = "Moist"
+        }
+        if emoji == "🐝" {
+            definitionLabel.text = "Bzz Bee"
+        }
+        if emoji == "🔥" {
+            definitionLabel.text = "Lit AF"
+        }
     }
     
     
